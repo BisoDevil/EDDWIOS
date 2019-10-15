@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="txtUsername" destination="14C-QV-Gi7" id="U7e-eq-bpL"/>
+                        <segue destination="Km1-iI-if9" kind="show" identifier="homeSegue" id="TVT-B7-ape"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfd-L6-YNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,12 +103,21 @@
                     </view>
                     <connections>
                         <outlet property="txtUsername" destination="dBn-AL-vI7" id="QuJ-5L-wQH"/>
+                        <segue destination="Km1-iI-if9" kind="show" identifier="homeSegue" id="xER-wU-Tef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILi-k4-9ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5RR-sL-Ma5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-474" y="-652"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="uA6-Ks-ssa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Km1-iI-if9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UId-Bp-12n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-1212"/>
         </scene>
         <!--Guest LoginVC-->
         <scene sceneID="dH1-A7-lln">
@@ -130,7 +140,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uk9-Q3-aLf">
-                                <rect key="frame" x="131" y="216" width="153" height="28"/>
+                                <rect key="frame" x="130.5" y="216" width="153" height="28"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Not a member ">
@@ -186,6 +196,7 @@
                     <connections>
                         <outlet property="txtPassword" destination="d1T-qc-Gp2" id="LTJ-bP-Kli"/>
                         <outlet property="txtUsername" destination="enb-WF-91P" id="ET8-6n-ggS"/>
+                        <segue destination="Km1-iI-if9" kind="show" identifier="homeSegue" id="v2D-Db-bcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpf-Ix-kBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,6 +320,7 @@
                         <outlet property="txtPhoneNumber" destination="K4q-dr-eN0" id="op4-HU-hm4"/>
                         <outlet property="txtSpeciality" destination="rEo-ua-hkF" id="0cu-4n-6YY"/>
                         <outlet property="txtTitle" destination="XIK-zR-ewJ" id="pjU-zr-Ntn"/>
+                        <segue destination="Km1-iI-if9" kind="show" identifier="homeSegue" id="g6b-SJ-Tm9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJg-kd-LIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,5 +450,8 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TVT-B7-ape"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" name="MainColor"/>
 </document>

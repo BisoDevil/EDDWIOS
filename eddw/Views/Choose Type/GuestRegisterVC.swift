@@ -35,6 +35,21 @@ class GuestRegisterVC: UIViewController {
     }
     
     @IBAction func register(_ sender: RoundedUIButton) {
+        var guest = Guest()
+        guest.fullname = txtFullname.text!
+        guest.phone = txtPhoneNumber.text!
+        guest.email = txtEmailAddress.text!
+        guest.title = 0
+        guest.speciality = txtSpeciality.text!
+        guest.country = txtNationality.text!
+        guest.password = txtPassword.text!
+        ServerOperations(view: view).registerGuest(guest: guest) {[unowned self] (logged) in
+            if logged {
+                self.performSegue(withIdentifier: "homeSegue", sender: nil )
+            }else{
+                self.view.makeToast("Try again")
+            }
+        }
     }
     
 }

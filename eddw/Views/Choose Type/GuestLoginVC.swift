@@ -14,11 +14,19 @@ class GuestLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-txtPassword.isSecureTextEntry = true
+        txtPassword.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     
     @IBAction func login(_ sender: RoundedUIButton) {
+        ServerOperations(view: view)
+            .loginGuest(username: txtUsername.text!, password: txtPassword.text!) {[unowned self] (logged) in
+                if logged {
+                    self.performSegue(withIdentifier: "homeSegue", sender: nil)
+                }else{
+                    self.view.makeToast("Wrong username or password")
+                }
+        }
     }
     
 }
