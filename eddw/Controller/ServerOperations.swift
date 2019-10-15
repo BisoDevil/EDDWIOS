@@ -56,8 +56,35 @@ class ServerOperations {
             callback(true)
         }
     }
+    func loginEmployee(username:String,callback:@escaping(_ logged: Bool)->Void) {
+        dynamicRequest(url: "Employee/Authenticate/\(username)") {[unowned self] (employee:Employee?) in
+            guard let employee = employee else {
+                callback(false)
+                return}
+            self.shared.set(employee.fullname, forKey: "name")
+            self.shared.set(employee.token, forKey: "token")
+            self.shared.set(employee.username, forKey: "username")
+            self.shared.set(employee.id, forKey: "username")
+            self.shared.synchronize()
+            self.view.makeToast("Welcome , \(employee.fullname)")
+            callback(true)
+        }
+    }
     
-    
+    func loginGuest(username:String,password:String,callback:@escaping(_ logged: Bool)->Void) {
+        dynamicRequest(url: "Guest/Authenticate/\(username)/\(password)") {[unowned self] (guest:Guest?) in
+            guard let guest = guest else {
+                callback(false)
+                return}
+            self.shared.set(guest.fullname, forKey: "name")
+            self.shared.set(guest.accessToken, forKey: "token")
+            self.shared.set(guest.username, forKey: "username")
+            self.shared.set(guest.id, forKey: "username")
+            self.shared.synchronize()
+            self.view.makeToast("Welcome , \(guest.fullname)")
+            callback(true)
+        }
+    }
     func retrieveProgramme(callback:@escaping (_ programms:[Programme])->Void) {
         dynamicRequest(url: "Programme") { (res:[Programme]?) in
             guard let progs = res else { return}

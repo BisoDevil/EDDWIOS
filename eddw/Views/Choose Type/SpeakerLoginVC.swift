@@ -9,18 +9,22 @@
 import UIKit
 
 class SpeakerLoginVC: UIViewController {
-
+    
     @IBOutlet weak var txtUsername: AppTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func login(_ sender: Any) {
+        ServerOperations(view: view)
+            .loginSpeaker(username: txtUsername.text!) { (logged) in
+                
+        }
     }
     
-  
-
+    
+    
 }
