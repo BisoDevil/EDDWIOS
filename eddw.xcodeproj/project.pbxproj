@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79C16FD02356290100595E61 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C16FCF2356290100595E61 /* HomeViewController.swift */; };
 		79DF0F312355AF5F00ECBD93 /* ServerOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F302355AF5F00ECBD93 /* ServerOperations.swift */; };
 		79DF0F342355BA0A00ECBD93 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F332355BA0A00ECBD93 /* Programme.swift */; };
 		79DF0F362355BA5A00ECBD93 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F352355BA5A00ECBD93 /* Attendance.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		33540F1F15662325940416AC /* Pods_eddw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eddw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D89CFED6E80528EB09FB53 /* Pods-eddw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eddw.debug.xcconfig"; path = "Target Support Files/Pods-eddw/Pods-eddw.debug.xcconfig"; sourceTree = "<group>"; };
+		79C16FCF2356290100595E61 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		79DF0F302355AF5F00ECBD93 /* ServerOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOperations.swift; sourceTree = "<group>"; };
 		79DF0F332355BA0A00ECBD93 /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
 		79DF0F352355BA5A00ECBD93 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				79DF0F61235604AC00ECBD93 /* Home.storyboard */,
+				79C16FCF2356290100595E61 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				79DF0F402355BB3B00ECBD93 /* MetaAssist.swift in Sources */,
 				79DF0F382355BA7F00ECBD93 /* Booth.swift in Sources */,
 				79DF0F312355AF5F00ECBD93 /* ServerOperations.swift in Sources */,
+				79C16FD02356290100595E61 /* HomeViewController.swift in Sources */,
 				79DF0F562355DB3300ECBD93 /* AppTextField.swift in Sources */,
 				79DF0F422355BB7600ECBD93 /* Question.swift in Sources */,
 				79DF0F4F2355CA9000ECBD93 /* RoundedImage.swift in Sources */,

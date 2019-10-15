@@ -8,6 +8,8 @@ target 'eddw' do
   pod 'Toast-Swift'
   pod 'SDWebImage'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'moa'
+  pod 'Auk'
   # Pods for eddw
 
 end
