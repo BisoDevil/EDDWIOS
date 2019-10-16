@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794FA32A235757E000D7B2B1 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA329235757E000D7B2B1 /* SpeakerTableViewCell.swift */; };
+		794FA32D2357649A00D7B2B1 /* Sponsor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794FA32C2357649A00D7B2B1 /* Sponsor.storyboard */; };
+		794FA32F235765B000D7B2B1 /* SponsorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA32E235765B000D7B2B1 /* SponsorVC.swift */; };
+		794FA3312357664400D7B2B1 /* SponsorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA3302357664400D7B2B1 /* SponsorTableViewCell.swift */; };
+		794FA33423576B3F00D7B2B1 /* BoothBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794FA33323576B3F00D7B2B1 /* BoothBook.storyboard */; };
+		794FA33623576BF400D7B2B1 /* BoothBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA33523576BF400D7B2B1 /* BoothBookTableViewCell.swift */; };
+		794FA33823576C1300D7B2B1 /* BoothBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA33723576C1300D7B2B1 /* BoothBookVC.swift */; };
 		79C16FD02356290100595E61 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C16FCF2356290100595E61 /* HomeViewController.swift */; };
+		79D7957E23570CC400DC7D00 /* Programme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D7957D23570CC400DC7D00 /* Programme.storyboard */; };
+		79D795802357131600DC7D00 /* ProgrammeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D7957F2357131600DC7D00 /* ProgrammeVC.swift */; };
+		79D795822357137200DC7D00 /* PrgogrammeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D795812357137200DC7D00 /* PrgogrammeCell.swift */; };
+		79D795842357204300DC7D00 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D795832357204300DC7D00 /* StringExtension.swift */; };
+		79D795872357271E00DC7D00 /* Speaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D795862357271E00DC7D00 /* Speaker.storyboard */; };
+		79D795892357274600DC7D00 /* SpeakerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D795882357274600DC7D00 /* SpeakerVC.swift */; };
 		79DF0F312355AF5F00ECBD93 /* ServerOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F302355AF5F00ECBD93 /* ServerOperations.swift */; };
 		79DF0F342355BA0A00ECBD93 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F332355BA0A00ECBD93 /* Programme.swift */; };
 		79DF0F362355BA5A00ECBD93 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF0F352355BA5A00ECBD93 /* Attendance.swift */; };
@@ -44,7 +57,20 @@
 /* Begin PBXFileReference section */
 		33540F1F15662325940416AC /* Pods_eddw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eddw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D89CFED6E80528EB09FB53 /* Pods-eddw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eddw.debug.xcconfig"; path = "Target Support Files/Pods-eddw/Pods-eddw.debug.xcconfig"; sourceTree = "<group>"; };
+		794FA329235757E000D7B2B1 /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
+		794FA32C2357649A00D7B2B1 /* Sponsor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sponsor.storyboard; sourceTree = "<group>"; };
+		794FA32E235765B000D7B2B1 /* SponsorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorVC.swift; sourceTree = "<group>"; };
+		794FA3302357664400D7B2B1 /* SponsorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorTableViewCell.swift; sourceTree = "<group>"; };
+		794FA33323576B3F00D7B2B1 /* BoothBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoothBook.storyboard; sourceTree = "<group>"; };
+		794FA33523576BF400D7B2B1 /* BoothBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothBookTableViewCell.swift; sourceTree = "<group>"; };
+		794FA33723576C1300D7B2B1 /* BoothBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothBookVC.swift; sourceTree = "<group>"; };
 		79C16FCF2356290100595E61 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		79D7957D23570CC400DC7D00 /* Programme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Programme.storyboard; sourceTree = "<group>"; };
+		79D7957F2357131600DC7D00 /* ProgrammeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeVC.swift; sourceTree = "<group>"; };
+		79D795812357137200DC7D00 /* PrgogrammeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrgogrammeCell.swift; sourceTree = "<group>"; };
+		79D795832357204300DC7D00 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		79D795862357271E00DC7D00 /* Speaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Speaker.storyboard; sourceTree = "<group>"; };
+		79D795882357274600DC7D00 /* SpeakerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerVC.swift; sourceTree = "<group>"; };
 		79DF0F302355AF5F00ECBD93 /* ServerOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOperations.swift; sourceTree = "<group>"; };
 		79DF0F332355BA0A00ECBD93 /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
 		79DF0F352355BA5A00ECBD93 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
@@ -100,6 +126,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		794FA32B2357647000D7B2B1 /* Sponsor */ = {
+			isa = PBXGroup;
+			children = (
+				794FA32C2357649A00D7B2B1 /* Sponsor.storyboard */,
+				794FA32E235765B000D7B2B1 /* SponsorVC.swift */,
+				794FA3302357664400D7B2B1 /* SponsorTableViewCell.swift */,
+			);
+			path = Sponsor;
+			sourceTree = "<group>";
+		};
+		794FA33223576B2900D7B2B1 /* BoothBook */ = {
+			isa = PBXGroup;
+			children = (
+				794FA33323576B3F00D7B2B1 /* BoothBook.storyboard */,
+				794FA33523576BF400D7B2B1 /* BoothBookTableViewCell.swift */,
+				794FA33723576C1300D7B2B1 /* BoothBookVC.swift */,
+			);
+			path = BoothBook;
+			sourceTree = "<group>";
+		};
+		79D7957C23570C9C00DC7D00 /* Programme */ = {
+			isa = PBXGroup;
+			children = (
+				79D7957D23570CC400DC7D00 /* Programme.storyboard */,
+				79D7957F2357131600DC7D00 /* ProgrammeVC.swift */,
+				79D795812357137200DC7D00 /* PrgogrammeCell.swift */,
+			);
+			path = Programme;
+			sourceTree = "<group>";
+		};
+		79D79585235726F400DC7D00 /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				79D795862357271E00DC7D00 /* Speaker.storyboard */,
+				79D795882357274600DC7D00 /* SpeakerVC.swift */,
+				794FA329235757E000D7B2B1 /* SpeakerTableViewCell.swift */,
+			);
+			path = Speaker;
+			sourceTree = "<group>";
+		};
 		79DF0F2F2355AAE500ECBD93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +207,10 @@
 		79DF0F502355CB2C00ECBD93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				794FA33223576B2900D7B2B1 /* BoothBook */,
+				794FA32B2357647000D7B2B1 /* Sponsor */,
+				79D79585235726F400DC7D00 /* Speaker */,
+				79D7957C23570C9C00DC7D00 /* Programme */,
 				79DF0F602356049800ECBD93 /* Home */,
 				79DF0F572355DD8200ECBD93 /* Choose Type */,
 			);
@@ -209,6 +279,7 @@
 			children = (
 				79E32F342354A893006E5AA1 /* ViewExtension.swift */,
 				79E32F372354AAB4006E5AA1 /* ViewControllerExtension.swift */,
+				79D795832357204300DC7D00 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,9 +353,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794FA32D2357649A00D7B2B1 /* Sponsor.storyboard in Resources */,
 				79E32F272354817C006E5AA1 /* LaunchScreen.storyboard in Resources */,
+				794FA33423576B3F00D7B2B1 /* BoothBook.storyboard in Resources */,
 				79E32F242354817C006E5AA1 /* Assets.xcassets in Resources */,
 				79E32F2223548178006E5AA1 /* Main.storyboard in Resources */,
+				79D7957E23570CC400DC7D00 /* Programme.storyboard in Resources */,
+				79D795872357271E00DC7D00 /* Speaker.storyboard in Resources */,
 				79DF0F62235604AC00ECBD93 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,12 +415,16 @@
 			files = (
 				79DF0F592355DDA900ECBD93 /* SpeakerLoginVC.swift in Sources */,
 				79DF0F522355CEF900ECBD93 /* TypeCollectionViewCell.swift in Sources */,
+				79D795842357204300DC7D00 /* StringExtension.swift in Sources */,
+				794FA32A235757E000D7B2B1 /* SpeakerTableViewCell.swift in Sources */,
 				79DF0F5D2355DDCE00ECBD93 /* GuestLoginVC.swift in Sources */,
 				79DF0F342355BA0A00ECBD93 /* Programme.swift in Sources */,
 				79DF0F3E2355BB0F00ECBD93 /* Guest.swift in Sources */,
 				79DF0F4D2355C8B800ECBD93 /* AppUIView.swift in Sources */,
+				794FA33823576C1300D7B2B1 /* BoothBookVC.swift in Sources */,
 				79DF0F442355BB9C00ECBD93 /* Room.swift in Sources */,
 				79DF0F3A2355BAA900ECBD93 /* BoothBook.swift in Sources */,
+				794FA3312357664400D7B2B1 /* SponsorTableViewCell.swift in Sources */,
 				79E32F382354AAB4006E5AA1 /* ViewControllerExtension.swift in Sources */,
 				79DF0F5B2355DDB800ECBD93 /* CompanyLoginVC.swift in Sources */,
 				79DF0F3C2355BAD600ECBD93 /* Employee.swift in Sources */,
@@ -358,13 +437,18 @@
 				79DF0F4F2355CA9000ECBD93 /* RoundedImage.swift in Sources */,
 				79DF0F4A2355BBEA00ECBD93 /* Timeline.swift in Sources */,
 				79DF0F542355DA7F00ECBD93 /* RoundedUIButton.swift in Sources */,
+				79D795822357137200DC7D00 /* PrgogrammeCell.swift in Sources */,
 				79DF0F362355BA5A00ECBD93 /* Attendance.swift in Sources */,
 				79E32F2F235486C6006E5AA1 /* chooseController.swift in Sources */,
+				794FA32F235765B000D7B2B1 /* SponsorVC.swift in Sources */,
 				79DF0F482355BBCD00ECBD93 /* Sponsor.swift in Sources */,
+				79D795892357274600DC7D00 /* SpeakerVC.swift in Sources */,
 				79DF0F462355BBB500ECBD93 /* Speaker.swift in Sources */,
 				79E32F1D23548178006E5AA1 /* AppDelegate.swift in Sources */,
 				79DF0F5F2355EBA500ECBD93 /* GuestRegisterVC.swift in Sources */,
 				79E32F352354A893006E5AA1 /* ViewExtension.swift in Sources */,
+				794FA33623576BF400D7B2B1 /* BoothBookTableViewCell.swift in Sources */,
+				79D795802357131600DC7D00 /* ProgrammeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,9 +51,10 @@ class RoundedImage: UIImageView {
         layer.masksToBounds = true
         clipsToBounds = true
         if rounded {
-            bounds.size.height = frame.height
-            bounds.size.width = frame.height
-            layer.cornerRadius = bounds.height / 2
+//            bounds.size.height = frame.height
+//            bounds.size.width = frame.height
+//            layer.cornerRadius = bounds.height / 2
+            round()
         }else{
             layer.cornerRadius = cornerRadius
         }

@@ -10,5 +10,5 @@ import Foundation
 struct Sponsor:Codable {
     var name: String = ""
     var inforamtion: String = ""
-    var logo: String = ""
+    var logo: String? = ""
 }

@@ -52,6 +52,7 @@ class ServerOperations {
             self.shared.set(speaker.username, forKey: "username")
             self.shared.set(speaker.id, forKey: "username")
             self.shared.synchronize()
+            
             self.view.makeToast("Welcome , \(speaker.fullname)")
             callback(true)
         }
@@ -108,8 +109,26 @@ class ServerOperations {
             callback(progs)
         }
     }
+    func retrieveSpeaker(callback:@escaping (_ programms:[Speaker])->Void) {
+        dynamicRequest(url: "speaker") { (res:[Speaker]?) in
+            guard let progs = res else { return}
+            callback(progs)
+        }
+    }
+    func retrieveSponsor(callback:@escaping (_ programms:[Sponsor])->Void) {
+        dynamicRequest(url: "sponsor") { (res:[Sponsor]?) in
+            guard let progs = res else { return}
+            callback(progs)
+        }
+    }
     
-    
+    //BoothBooks
+    func retrieveBoothBook(callback:@escaping (_ programms:[BoothBook])->Void) {
+        dynamicRequest(url: "BoothBooks") { (res:[BoothBook]?) in
+            guard let progs = res else { return}
+            callback(progs)
+        }
+    }
     
     fileprivate func dynamicRequest<T:Codable>(url:String,method:HTTPMethod = .get,body:T? = nil,query:Parameters? = nil,callback:@escaping (_ res:T?)->Void){
         
