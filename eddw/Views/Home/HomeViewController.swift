@@ -29,19 +29,20 @@ class HomeViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination == ProgrammeVC(){
-        let destination = segue.destination as! ProgrammeVC
-        switch (sender as! UIButton) {
-        case btnHands:
-            destination.hands = "HandsOn"
-            break
-        case btnProgramme:
-            destination.hands = "Scentific"
-            break
-            
-        default:
-            print("else")
-        }
+        
+        if let destination = segue.destination as? ProgrammeVC{
+            print("Basem go to programme controller")
+            switch (sender as! UIButton) {
+            case btnHands:
+                destination.hands = "HandsOn"
+                break
+            case btnProgramme:
+                destination.hands = "Scentific"
+                break
+                
+            default:
+                print("else")
+            }
         }
         
     }

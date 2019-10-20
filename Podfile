@@ -6,7 +6,7 @@ target 'eddw' do
   use_frameworks!
   pod 'Alamofire'
   pod 'Toast-Swift'
-  pod 'SDWebImage'
+  
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'moa'
   pod 'Auk'

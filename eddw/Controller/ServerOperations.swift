@@ -130,6 +130,31 @@ class ServerOperations {
         }
     }
     
+    // timelines
+    func retrieveTimeLine(callback:@escaping (_ times:[Timeline])->Void) {
+        dynamicRequest(url: "Timeline/\(getClientId())") { (res:[Timeline]?) in
+            guard let time = res else {return}
+            callback(time)
+        }
+    }
+    
+    //save attendance
+    func saveAttendance(code:String,programmeId:Int){
+        var attendance = Attendance()
+        attendance.programmeId = programmeId
+        attendance.userId = getClientId()
+        
+        dynamicRequest(url: "Attendance/\(code)", method: .post, body: attendance) {[unowned self] (res:Attendance?) in
+            if res == nil {
+                self.view.makeToast("wrong attendance code")
+                
+            }else{
+                self.view.makeToast("Saved")
+            }
+        }
+    }
+    
+    
     fileprivate func dynamicRequest<T:Codable>(url:String,method:HTTPMethod = .get,body:T? = nil,query:Parameters? = nil,callback:@escaping (_ res:T?)->Void){
         
         view.makeToastActivity(.center)

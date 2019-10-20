@@ -25,48 +25,32 @@
             <objects>
                 <viewController id="1i8-je-GTc" customClass="HomeViewController" customModule="eddw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gTU-dD-vK1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guest" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-Vl-9tO" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="16" y="86" width="60" height="60"/>
+                                <rect key="frame" x="16" y="47" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Ofh-HC-LGA"/>
-                                    <constraint firstAttribute="width" constant="60" id="iXN-1d-HaT"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ofh-HC-LGA"/>
+                                    <constraint firstAttribute="width" constant="50" id="iXN-1d-HaT"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkl-Jj-b1n">
-                                <rect key="frame" x="84" y="81" width="249" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkl-Jj-b1n">
+                                <rect key="frame" x="74" y="37" width="259" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="giQ-wO-1oe"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Basem Abduallah
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="21" name=".AppleSystemUIFontEmphasizedItalic"/>
-                                            <font key="NSOriginalFont" size="19" name=".AppleSystemUIFontEmphasizedItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Egypt">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="21" name=".AppleSystemUIFontEmphasizedItalic"/>
-                                            <font key="NSOriginalFont" size="19" name=".AppleSystemUIFontEmphasizedItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">Basem Abduallah
+Egypt</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFontEmphasizedItalic" family=".AppleSystemUIFont" pointSize="21"/>
+                                <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-XV-qbz" customClass="AppUIView" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="16" y="171" width="343" height="120"/>
+                                <rect key="frame" x="16" y="127" width="343" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="n17-j4-8FO">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
@@ -96,11 +80,21 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-7q-hgt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="120"/>
+                                                        <connections>
+                                                            <segue destination="dmn-Om-aef" kind="show" id="VcY-bu-UhP"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="5dP-7q-hgt" firstAttribute="height" secondItem="qh8-X5-ZIO" secondAttribute="height" id="9t3-9d-iCE"/>
                                                     <constraint firstItem="Yfu-H3-YDO" firstAttribute="width" secondItem="qh8-X5-ZIO" secondAttribute="width" id="Efv-sO-eQm"/>
+                                                    <constraint firstItem="5dP-7q-hgt" firstAttribute="centerY" secondItem="qh8-X5-ZIO" secondAttribute="centerY" id="K0d-0Z-Ai0"/>
                                                     <constraint firstItem="Yfu-H3-YDO" firstAttribute="centerY" secondItem="qh8-X5-ZIO" secondAttribute="centerY" id="LEj-FY-jIm"/>
+                                                    <constraint firstItem="5dP-7q-hgt" firstAttribute="centerX" secondItem="qh8-X5-ZIO" secondAttribute="centerX" id="Ojr-wk-t3Q"/>
+                                                    <constraint firstItem="5dP-7q-hgt" firstAttribute="width" secondItem="qh8-X5-ZIO" secondAttribute="width" id="Snj-7V-82F"/>
                                                     <constraint firstItem="Yfu-H3-YDO" firstAttribute="centerX" secondItem="qh8-X5-ZIO" secondAttribute="centerX" id="aeh-I2-Rfi"/>
                                                 </constraints>
                                             </view>
@@ -219,7 +213,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-jf-Lid">
-                                <rect key="frame" x="35" y="331" width="340" height="50"/>
+                                <rect key="frame" x="35" y="287" width="340" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-Bg-B5i">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
@@ -297,7 +291,7 @@ Programme</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="89o-HW-7cP">
-                                <rect key="frame" x="35" y="397" width="340" height="50"/>
+                                <rect key="frame" x="35" y="353" width="340" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-6f-BCU">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
@@ -376,7 +370,7 @@ Programme</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-ap-Vrq">
-                                <rect key="frame" x="35" y="463" width="340" height="50"/>
+                                <rect key="frame" x="35" y="419" width="340" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59w-T4-X3j">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
@@ -449,7 +443,7 @@ Programme</string>
                                 </subviews>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-b2-Zgz">
-                                <rect key="frame" x="16" y="542" width="343" height="220"/>
+                                <rect key="frame" x="16" y="498" width="343" height="176"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -463,7 +457,7 @@ Programme</string>
                             <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="DOe-ap-Vrq" secondAttribute="trailing" id="TtN-ZK-Aq2"/>
                             <constraint firstItem="uDk-XV-qbz" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="16" id="WUB-kw-WAE"/>
                             <constraint firstItem="cIR-b2-Zgz" firstAttribute="top" secondItem="DOe-ap-Vrq" secondAttribute="bottom" constant="29" id="WXK-Ig-FtA"/>
-                            <constraint firstItem="ks9-Vl-9tO" firstAttribute="top" secondItem="UR5-nI-4l4" secondAttribute="top" constant="42" id="YQ7-CN-yYB"/>
+                            <constraint firstItem="ks9-Vl-9tO" firstAttribute="top" secondItem="UR5-nI-4l4" secondAttribute="top" constant="47" id="YQ7-CN-yYB"/>
                             <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="dkl-Jj-b1n" secondAttribute="trailing" constant="42" id="Yhy-iF-iPB"/>
                             <constraint firstItem="cIR-b2-Zgz" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="16" id="aT7-cM-W68"/>
                             <constraint firstItem="ks9-Vl-9tO" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="16" id="bVD-SI-ph0"/>
@@ -479,7 +473,6 @@ Programme</string>
                         <viewLayoutGuide key="safeArea" id="UR5-nI-4l4"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="PdD-uX-zbE"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btnHands" destination="Q3E-3g-DCn" id="oAU-Vt-vyX"/>
                         <outlet property="btnProgramme" destination="dUK-HE-XKL" id="bdi-KA-Llr"/>
@@ -489,6 +482,14 @@ Programme</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCj-d0-gTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="844" y="3.6945812807881775"/>
+        </scene>
+        <!--TimeLine-->
+        <scene sceneID="XGG-uJ-1nb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeLine" id="dmn-Om-aef" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwW-Qw-Kal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-387"/>
         </scene>
         <!--Speaker-->
         <scene sceneID="L7E-we-LZI">
@@ -519,9 +520,13 @@ Programme</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jcN-g5-XDI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tHL-BP-ZTy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="tHL-BP-ZTy">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="MainColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -544,6 +549,9 @@ Programme</string>
         <image name="sponsor_home" width="200" height="200"/>
         <image name="timeline" width="400.69564819335938" height="400.69564819335938"/>
         <image name="videos" width="200" height="200"/>
+        <namedColor name="MainColor">
+            <color red="0.078431372549019607" green="0.43137254901960786" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TextColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -551,5 +559,5 @@ Programme</string>
     <inferredMetricsTieBreakers>
         <segue reference="FLS-7u-U7t"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" name="MainColor"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

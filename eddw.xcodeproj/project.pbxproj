@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7937231C235C863C00EC1344 /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7937231B235C863C00EC1344 /* TimeLine.storyboard */; };
+		7937231E235C867900EC1344 /* TimeLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937231D235C867900EC1344 /* TimeLineVC.swift */; };
+		79372320235C878400EC1344 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937231F235C878400EC1344 /* TimeLineTableViewCell.swift */; };
+		79372323235C91D100EC1344 /* ProgrammeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79372322235C91D100EC1344 /* ProgrammeDetails.storyboard */; };
+		79372325235C931900EC1344 /* ProgrameDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79372324235C931900EC1344 /* ProgrameDetailsVC.swift */; };
+		79372328235CAB5500EC1344 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79372326235CAB5500EC1344 /* Notes.xcdatamodeld */; };
 		794FA32A235757E000D7B2B1 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA329235757E000D7B2B1 /* SpeakerTableViewCell.swift */; };
 		794FA32D2357649A00D7B2B1 /* Sponsor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794FA32C2357649A00D7B2B1 /* Sponsor.storyboard */; };
 		794FA32F235765B000D7B2B1 /* SponsorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FA32E235765B000D7B2B1 /* SponsorVC.swift */; };
@@ -57,6 +63,12 @@
 /* Begin PBXFileReference section */
 		33540F1F15662325940416AC /* Pods_eddw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eddw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D89CFED6E80528EB09FB53 /* Pods-eddw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eddw.debug.xcconfig"; path = "Target Support Files/Pods-eddw/Pods-eddw.debug.xcconfig"; sourceTree = "<group>"; };
+		7937231B235C863C00EC1344 /* TimeLine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
+		7937231D235C867900EC1344 /* TimeLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineVC.swift; sourceTree = "<group>"; };
+		7937231F235C878400EC1344 /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
+		79372322235C91D100EC1344 /* ProgrammeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgrammeDetails.storyboard; sourceTree = "<group>"; };
+		79372324235C931900EC1344 /* ProgrameDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrameDetailsVC.swift; sourceTree = "<group>"; };
+		79372327235CAB5500EC1344 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		794FA329235757E000D7B2B1 /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
 		794FA32C2357649A00D7B2B1 /* Sponsor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sponsor.storyboard; sourceTree = "<group>"; };
 		794FA32E235765B000D7B2B1 /* SponsorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorVC.swift; sourceTree = "<group>"; };
@@ -124,6 +136,25 @@
 				33540F1F15662325940416AC /* Pods_eddw.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7937231A235C862300EC1344 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				7937231B235C863C00EC1344 /* TimeLine.storyboard */,
+				7937231D235C867900EC1344 /* TimeLineVC.swift */,
+				7937231F235C878400EC1344 /* TimeLineTableViewCell.swift */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		79372321235C91BB00EC1344 /* Programme Detail */ = {
+			isa = PBXGroup;
+			children = (
+				79372322235C91D100EC1344 /* ProgrammeDetails.storyboard */,
+				79372324235C931900EC1344 /* ProgrameDetailsVC.swift */,
+			);
+			path = "Programme Detail";
 			sourceTree = "<group>";
 		};
 		794FA32B2357647000D7B2B1 /* Sponsor */ = {
@@ -207,6 +238,8 @@
 		79DF0F502355CB2C00ECBD93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79372321235C91BB00EC1344 /* Programme Detail */,
+				7937231A235C862300EC1344 /* TimeLine */,
 				794FA33223576B2900D7B2B1 /* BoothBook */,
 				794FA32B2357647000D7B2B1 /* Sponsor */,
 				79D79585235726F400DC7D00 /* Speaker */,
@@ -270,6 +303,7 @@
 				79E32F232354817C006E5AA1 /* Assets.xcassets */,
 				79E32F252354817C006E5AA1 /* LaunchScreen.storyboard */,
 				79E32F282354817C006E5AA1 /* Info.plist */,
+				79372326235CAB5500EC1344 /* Notes.xcdatamodeld */,
 			);
 			path = eddw;
 			sourceTree = "<group>";
@@ -353,11 +387,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7937231C235C863C00EC1344 /* TimeLine.storyboard in Resources */,
 				794FA32D2357649A00D7B2B1 /* Sponsor.storyboard in Resources */,
 				79E32F272354817C006E5AA1 /* LaunchScreen.storyboard in Resources */,
 				794FA33423576B3F00D7B2B1 /* BoothBook.storyboard in Resources */,
 				79E32F242354817C006E5AA1 /* Assets.xcassets in Resources */,
 				79E32F2223548178006E5AA1 /* Main.storyboard in Resources */,
+				79372323235C91D100EC1344 /* ProgrammeDetails.storyboard in Resources */,
 				79D7957E23570CC400DC7D00 /* Programme.storyboard in Resources */,
 				79D795872357271E00DC7D00 /* Speaker.storyboard in Resources */,
 				79DF0F62235604AC00ECBD93 /* Home.storyboard in Resources */,
@@ -420,20 +456,24 @@
 				79DF0F5D2355DDCE00ECBD93 /* GuestLoginVC.swift in Sources */,
 				79DF0F342355BA0A00ECBD93 /* Programme.swift in Sources */,
 				79DF0F3E2355BB0F00ECBD93 /* Guest.swift in Sources */,
+				7937231E235C867900EC1344 /* TimeLineVC.swift in Sources */,
 				79DF0F4D2355C8B800ECBD93 /* AppUIView.swift in Sources */,
 				794FA33823576C1300D7B2B1 /* BoothBookVC.swift in Sources */,
 				79DF0F442355BB9C00ECBD93 /* Room.swift in Sources */,
+				79372328235CAB5500EC1344 /* Notes.xcdatamodeld in Sources */,
 				79DF0F3A2355BAA900ECBD93 /* BoothBook.swift in Sources */,
 				794FA3312357664400D7B2B1 /* SponsorTableViewCell.swift in Sources */,
 				79E32F382354AAB4006E5AA1 /* ViewControllerExtension.swift in Sources */,
 				79DF0F5B2355DDB800ECBD93 /* CompanyLoginVC.swift in Sources */,
 				79DF0F3C2355BAD600ECBD93 /* Employee.swift in Sources */,
+				79372325235C931900EC1344 /* ProgrameDetailsVC.swift in Sources */,
 				79DF0F402355BB3B00ECBD93 /* MetaAssist.swift in Sources */,
 				79DF0F382355BA7F00ECBD93 /* Booth.swift in Sources */,
 				79DF0F312355AF5F00ECBD93 /* ServerOperations.swift in Sources */,
 				79C16FD02356290100595E61 /* HomeViewController.swift in Sources */,
 				79DF0F562355DB3300ECBD93 /* AppTextField.swift in Sources */,
 				79DF0F422355BB7600ECBD93 /* Question.swift in Sources */,
+				79372320235C878400EC1344 /* TimeLineTableViewCell.swift in Sources */,
 				79DF0F4F2355CA9000ECBD93 /* RoundedImage.swift in Sources */,
 				79DF0F4A2355BBEA00ECBD93 /* Timeline.swift in Sources */,
 				79DF0F542355DA7F00ECBD93 /* RoundedUIButton.swift in Sources */,
@@ -650,6 +690,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79372326235CAB5500EC1344 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79372327235CAB5500EC1344 /* Notes.xcdatamodel */,
+			);
+			currentVersion = 79372327235CAB5500EC1344 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 79E32F1123548178006E5AA1 /* Project object */;
 }

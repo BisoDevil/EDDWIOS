@@ -106,11 +106,20 @@
                     </view>
                     <connections>
                         <outlet property="programmeTable" destination="aub-7G-XJu" id="A4d-YP-suG"/>
+                        <segue destination="hwx-ib-GKz" kind="show" identifier="detailsSegue" id="io1-Xc-ecG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIm-Q7-n31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="26.399999999999999" y="49.50738916256158"/>
+        </scene>
+        <!--ProgrammeDetails-->
+        <scene sceneID="9Hh-xA-scQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProgrammeDetails" id="hwx-ib-GKz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sa3-5x-1KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="-218"/>
         </scene>
     </scenes>
     <resources>
