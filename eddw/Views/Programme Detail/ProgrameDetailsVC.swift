@@ -26,6 +26,7 @@ class ProgrameDetailsVC: UITableViewController {
     
     public lazy var id = 0
     private lazy var programme = Programme()
+    private let db = DBOperations()
     override func viewDidLoad() {
         super.viewDidLoad()
         programme = ProgrammeVC.allProgrammes.first(where: {$0.id == id})!
@@ -37,43 +38,23 @@ class ProgrameDetailsVC: UITableViewController {
         tvSpeakerData.text = programme.speaker.fullname
         tvLocationData.text = programme.room.name
         tvInformationData.text = programme.description        
-        
+        txtNote.text = db.getNote(proId: programme.id)
     }
     
     @IBAction func sendAttendanceCode(_ sender: RoundedUIButton) {
-      ServerOperations(view: view).saveAttendance(code: txtAttendanceCode.text!, programmeId: programme.id)
+        ServerOperations(view: view).saveAttendance(code: txtAttendanceCode.text!, programmeId: programme.id)
+        
     }
     
     @IBAction func saveNote(_ sender: RoundedUIButton) {
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else {
-                return
+        db.saveNote(proId: programme.id, proName: programme.title, note: txtNote.text!){[unowned self](saved) in
+            if saved {
+                self.view.makeToast("Saved")
+            }else{
+                self.view.makeToast("Something went wrong")
+            }
         }
         
-        // 1
-        let managedContext =
-            appDelegate.persistentContainer.viewContext
-        
-        // 2
-        let entity =
-            NSEntityDescription.entity(forEntityName: "NotesDB",
-                                       in: managedContext)!
-        
-        let notes = NSManagedObject(entity: entity,
-                                     insertInto: managedContext)
-        
-        
-        // 3
-        notes.setValue(programme.id, forKeyPath: "proId")
-        notes.setValue(programme.title, forKey: "proName")
-        notes.setValue(txtNote.text!, forKey: "note")
-        // 4
-        do {
-            try managedContext.save()
-          view.makeToast("Saved")
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
     }
     
     private func setupUI(){

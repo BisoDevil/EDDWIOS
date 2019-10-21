@@ -19,13 +19,8 @@ class ProgrammeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerOperations(view: view)
-            .retrieveProgramme {[unowned self] (data) in
-                ProgrammeVC.allProgrammes = data
-                print("Basem type \(self.hands)")
-                self.programs = data.filter({$0.type == self.hands})
-                self.programmeTable.reloadData()
-        }
+              self.programs = ProgrammeVC.allProgrammes.filter({$0.type == self.hands})
+        self.programmeTable.reloadData()
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

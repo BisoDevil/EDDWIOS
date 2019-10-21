@@ -15,7 +15,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var btnProgramme: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ServerOperations(view: view)
+            .retrieveProgramme {(data) in
+                ProgrammeVC.allProgrammes = data
+                
+                
+        }
         imageSlidder.auk.show(url: "https://www.companieshistory.com/wp-content/uploads/2015/01/Novartis.jpg")
         imageSlidder.auk.show(url:  "https://colombiareports.com/wp-content/uploads/2019/08/pfizer-1170x585.jpg")
         imageSlidder.auk.show(url: "https://wazayf4u.com/wp-content/uploads/2017/10/download-2_600x300.jpg")
