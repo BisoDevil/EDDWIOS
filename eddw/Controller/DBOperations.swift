@@ -24,20 +24,23 @@ class DBOperations {
             NSEntityDescription.entity(forEntityName: "NotesDB",
                                        in: managedContext)!
         
-        let notes = NSManagedObject(entity: entity,
-                                    insertInto: managedContext)
+        
         let fetchRequest =
             NSFetchRequest<NSManagedObject>(entityName: "NotesDB")
         fetchRequest.predicate = NSPredicate(format: "proId == \(proId)")
         fetchRequest.fetchLimit = 1
-        notes.setValue(proId, forKeyPath: "proId")
-        notes.setValue(proName, forKeyPath: "proName")
-        notes.setValue(note, forKeyPath: "note")
+        
         do {
             let results = try managedContext.fetch(fetchRequest)
             let eNote = results.first?.value(forKeyPath: "note") as? String ?? ""
             if eNote != "" {
                 results.first?.setValue(note, forKeyPath: "note")
+            }else{
+                let notes = NSManagedObject(entity: entity,
+                                            insertInto: managedContext)
+                notes.setValue(proId, forKeyPath: "proId")
+                notes.setValue(proName, forKeyPath: "proName")
+                notes.setValue(note, forKeyPath: "note")
             }
             
             

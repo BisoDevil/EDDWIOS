@@ -212,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guest" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-kW-x2w" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="40" y="84" width="80" height="80"/>
+                                <rect key="frame" x="40" y="104" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="az3-Kf-dlo"/>
                                     <constraint firstAttribute="width" constant="80" id="guF-ey-N7i"/>
@@ -223,25 +223,25 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-Q9-kis" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="562" width="374" height="43"/>
+                                <rect key="frame" x="20" y="582" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVh-EF-aBv" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="310" width="374" height="43"/>
+                                <rect key="frame" x="20" y="330" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="E-Mail Address"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbY-8y-3VH" customClass="RoundedUIButton" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="162" y="635" width="90" height="30"/>
+                                <rect key="frame" x="162" y="655" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VbY-8y-3VH" secondAttribute="height" multiplier="3:1" id="Pqz-MP-cfh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="iel-C2-dxC"/>
                                     <constraint firstAttribute="height" constant="30" id="sDf-gA-GLB"/>
                                 </constraints>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" name="MainColor"/>
                                 </state>
@@ -250,35 +250,44 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIm-O3-otv" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="184" width="374" height="43"/>
+                                <rect key="frame" x="20" y="204" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Full Name"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4q-dr-eN0" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="247" width="374" height="43"/>
+                                <rect key="frame" x="20" y="267" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Phone Number"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnM-A9-Zfw" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="499" width="374" height="43"/>
+                                <rect key="frame" x="20" y="519" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nationality"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIK-zR-ewJ" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="373" width="374" height="43"/>
+                                <rect key="frame" x="20" y="393" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEo-ua-hkF" customClass="AppTextField" customModule="eddw" customModuleProvider="target">
-                                <rect key="frame" x="20" y="436" width="374" height="43"/>
+                                <rect key="frame" x="20" y="456" width="374" height="43"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Speciality"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-Bu-ETc">
+                                <rect key="frame" x="20" y="44" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="close:" destination="ciJ-Fp-U7a" eventType="touchUpInside" id="45x-lF-VHk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -302,7 +311,7 @@
                             <constraint firstItem="Maw-Q9-kis" firstAttribute="top" secondItem="lnM-A9-Zfw" secondAttribute="bottom" constant="20" id="pbO-uS-4Tw"/>
                             <constraint firstItem="VwR-F8-mXV" firstAttribute="trailing" secondItem="XIK-zR-ewJ" secondAttribute="trailing" constant="20" id="qNf-Bx-xBW"/>
                             <constraint firstItem="rEo-ua-hkF" firstAttribute="top" secondItem="XIK-zR-ewJ" secondAttribute="bottom" constant="20" id="rC9-VR-46D"/>
-                            <constraint firstItem="8bM-kW-x2w" firstAttribute="top" secondItem="VwR-F8-mXV" secondAttribute="top" constant="40" id="rW2-yM-4Qo"/>
+                            <constraint firstItem="8bM-kW-x2w" firstAttribute="top" secondItem="VwR-F8-mXV" secondAttribute="top" constant="60" id="rW2-yM-4Qo"/>
                             <constraint firstItem="VwR-F8-mXV" firstAttribute="trailing" secondItem="rEo-ua-hkF" secondAttribute="trailing" constant="20" id="sRq-S6-HmL"/>
                             <constraint firstItem="GVh-EF-aBv" firstAttribute="top" secondItem="K4q-dr-eN0" secondAttribute="bottom" constant="20" id="tVK-7q-QF9"/>
                             <constraint firstItem="lnM-A9-Zfw" firstAttribute="leading" secondItem="VwR-F8-mXV" secondAttribute="leading" constant="20" id="tlp-f4-61h"/>
@@ -320,12 +329,20 @@
                         <outlet property="txtPhoneNumber" destination="K4q-dr-eN0" id="op4-HU-hm4"/>
                         <outlet property="txtSpeciality" destination="rEo-ua-hkF" id="0cu-4n-6YY"/>
                         <outlet property="txtTitle" destination="XIK-zR-ewJ" id="pjU-zr-Ntn"/>
-                        <segue destination="Km1-iI-if9" kind="show" identifier="homeSegue" id="g6b-SJ-Tm9"/>
+                        <segue destination="XWD-C7-XAO" kind="show" identifier="metaSegue" id="tha-4q-Bcd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJg-kd-LIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="-653.57142857142856"/>
+        </scene>
+        <!--Meta-->
+        <scene sceneID="qN2-zW-rl9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Meta" id="XWD-C7-XAO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjG-4t-IGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="-869"/>
         </scene>
         <!--Choose Controller-->
         <scene sceneID="Up2-CL-JDk">
@@ -451,7 +468,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TVT-B7-ape"/>
+        <segue reference="v2D-Db-bcM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="MainColor"/>
 </document>

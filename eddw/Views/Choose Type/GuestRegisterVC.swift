@@ -34,6 +34,10 @@ class GuestRegisterVC: UIViewController {
         txtPassword.resignFirstResponder()
     }
     
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func register(_ sender: RoundedUIButton) {
         var guest = Guest()
         guest.fullname = txtFullname.text!
@@ -45,7 +49,7 @@ class GuestRegisterVC: UIViewController {
         guest.password = txtPassword.text!
         ServerOperations(view: view).registerGuest(guest: guest) {[unowned self] (logged) in
             if logged {
-                self.performSegue(withIdentifier: "homeSegue", sender: nil )
+                self.performSegue(withIdentifier: "metaSegue", sender: nil )
             }else{
                 self.view.makeToast("Try again")
             }

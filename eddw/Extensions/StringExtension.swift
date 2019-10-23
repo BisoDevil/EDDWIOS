@@ -18,5 +18,15 @@ extension String{
         let formated = dateFormatter.string(from: date)
         return formated
     }
-   
+    
+}
+
+extension Date{
+    func toServerFormat() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        let formated = dateFormatter.string(from: self)
+        return formated
+    }
 }

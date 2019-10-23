@@ -155,6 +155,16 @@ class ServerOperations {
     }
     
     
+    func saveMetaAssist(meta:MetaAssist,callback:@escaping (_ met:MetaAssist?)->Void) {
+        var me = meta
+        me.user = getClientId()
+        dynamicRequest(url: "MetaAssist", method: .post, body: me) {(res:MetaAssist?) in
+            
+            callback(res)
+            
+        }
+    }
+    
     fileprivate func dynamicRequest<T:Codable>(url:String,method:HTTPMethod = .get,body:T? = nil,query:Parameters? = nil,callback:@escaping (_ res:T?)->Void){
         
         view.makeToastActivity(.center)

@@ -223,13 +223,13 @@ Egypt</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-jf-Lid">
-                                <rect key="frame" x="35" y="287" width="340" height="50"/>
+                                <rect key="frame" x="35" y="287" width="332" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-Bg-B5i">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B7H-Yf-EJ9">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="251" image="programme" translatesAutoresizingMaskIntoConstraints="NO" id="NEQ-T7-ZfB" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -242,7 +242,7 @@ Egypt</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-HE-XKL">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal">
                                                             <string key="title">Scientific 
@@ -265,10 +265,10 @@ Programme</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsd-f7-oBo">
-                                        <rect key="frame" x="174" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="170" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-uH-H8P">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="programme" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-8m-WXY">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -278,7 +278,7 @@ Programme</string>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-3g-DCn">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Hands-On">
                                                             <color key="titleColor" name="TextColor"/>
@@ -301,13 +301,13 @@ Programme</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="89o-HW-7cP">
-                                <rect key="frame" x="35" y="353" width="340" height="50"/>
+                                <rect key="frame" x="35" y="353" width="332" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-6f-BCU">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gIv-Oi-1oe">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="251" image="speaker_home" translatesAutoresizingMaskIntoConstraints="NO" id="arh-of-wZy" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -320,7 +320,7 @@ Programme</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW6-5J-1e0">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Speaker">
                                                             <color key="titleColor" name="TextColor"/>
@@ -341,10 +341,10 @@ Programme</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-B6-Qu9">
-                                        <rect key="frame" x="174" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="170" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bq6-yh-xRo">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="sponsor_home" translatesAutoresizingMaskIntoConstraints="NO" id="IEw-C1-kdK" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -357,7 +357,7 @@ Programme</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0s-li-n44">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Sponsors">
                                                             <color key="titleColor" name="TextColor"/>
@@ -380,13 +380,13 @@ Programme</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-ap-Vrq">
-                                <rect key="frame" x="35" y="419" width="340" height="50"/>
+                                <rect key="frame" x="35" y="419" width="332" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59w-T4-X3j">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-dj-AQG">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="251" image="booth" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-vK-sXd" customClass="RoundedImage" customModule="eddw" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -399,7 +399,7 @@ Programme</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-6b-Y5f">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Booth">
                                                             <color key="titleColor" name="TextColor"/>
@@ -420,10 +420,10 @@ Programme</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-cG-na6">
-                                        <rect key="frame" x="174" y="0.0" width="166" height="50"/>
+                                        <rect key="frame" x="170" y="0.0" width="162" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j9x-DZ-YJe">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="videos" translatesAutoresizingMaskIntoConstraints="NO" id="qjZ-sb-zgK">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -433,7 +433,7 @@ Programme</string>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gd6-Hm-gaL">
-                                                        <rect key="frame" x="55" y="0.0" width="111" height="50"/>
+                                                        <rect key="frame" x="55" y="0.0" width="107" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <state key="normal" title="Recorded Session">
                                                             <color key="titleColor" name="TextColor"/>
@@ -462,9 +462,9 @@ Programme</string>
                             <constraint firstItem="89o-HW-7cP" firstAttribute="top" secondItem="8Qs-jf-Lid" secondAttribute="bottom" constant="16" id="2ck-7n-MAU"/>
                             <constraint firstItem="89o-HW-7cP" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="35" id="8is-6O-M0K"/>
                             <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="cIR-b2-Zgz" secondAttribute="trailing" constant="16" id="FR4-c9-jJ3"/>
-                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="8Qs-jf-Lid" secondAttribute="trailing" id="GwO-Ta-hwP"/>
+                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="8Qs-jf-Lid" secondAttribute="trailing" constant="8" id="GwO-Ta-hwP"/>
                             <constraint firstItem="uDk-XV-qbz" firstAttribute="top" secondItem="dkl-Jj-b1n" secondAttribute="bottom" constant="20" id="NG7-S5-Gfw"/>
-                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="DOe-ap-Vrq" secondAttribute="trailing" id="TtN-ZK-Aq2"/>
+                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="DOe-ap-Vrq" secondAttribute="trailing" constant="8" id="TtN-ZK-Aq2"/>
                             <constraint firstItem="uDk-XV-qbz" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="16" id="WUB-kw-WAE"/>
                             <constraint firstItem="cIR-b2-Zgz" firstAttribute="top" secondItem="DOe-ap-Vrq" secondAttribute="bottom" constant="29" id="WXK-Ig-FtA"/>
                             <constraint firstItem="ks9-Vl-9tO" firstAttribute="top" secondItem="UR5-nI-4l4" secondAttribute="top" constant="47" id="YQ7-CN-yYB"/>
@@ -478,7 +478,7 @@ Programme</string>
                             <constraint firstItem="DOe-ap-Vrq" firstAttribute="leading" secondItem="UR5-nI-4l4" secondAttribute="leading" constant="35" id="qPI-2b-B63"/>
                             <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="uDk-XV-qbz" secondAttribute="trailing" constant="16" id="ueV-iO-7Fb"/>
                             <constraint firstItem="DOe-ap-Vrq" firstAttribute="top" secondItem="89o-HW-7cP" secondAttribute="bottom" constant="16" id="w6v-rc-Xek"/>
-                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="89o-HW-7cP" secondAttribute="trailing" id="xdG-7g-v5h"/>
+                            <constraint firstItem="UR5-nI-4l4" firstAttribute="trailing" secondItem="89o-HW-7cP" secondAttribute="trailing" constant="8" id="xdG-7g-v5h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UR5-nI-4l4"/>
                     </view>
