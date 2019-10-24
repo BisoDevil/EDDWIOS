@@ -48,6 +48,9 @@ class chooseController: UIViewController ,UICollectionViewDelegate,UICollectionV
         
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        dismiss(animated: true)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return types.count

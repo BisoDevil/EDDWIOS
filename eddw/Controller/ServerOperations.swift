@@ -173,7 +173,10 @@ class ServerOperations {
             "Content-Type":"application/json; charset=UTF-8"]
         guard var request = try? URLRequest(url: "\(baseURL)\(url)", method: method, headers: header) else { return  }
         let httpBody:Data? = try? JSONEncoder().encode(body)
-        request.httpBody = httpBody
+        if method != .get{
+            request.httpBody = httpBody ?? nil
+        }
+        
         Alamofire.request(request).responseJSON { (response) in
             self.view.hideToastActivity()
             response.result.ifFailure {
